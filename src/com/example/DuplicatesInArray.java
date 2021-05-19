@@ -3,6 +3,9 @@ package com.example;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Returning only the duplicated elemnet in an array
+ */
 public class DuplicatesInArray {
     public static void main(String[] args) {
         Set<Integer> resultSet = findDuplicates(new int[]{2, 3, 1, 4, 5, 5, 1, 3});
