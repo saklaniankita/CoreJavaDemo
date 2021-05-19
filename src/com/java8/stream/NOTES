@@ -1,0 +1,23 @@
+Not a data structure
+Designed for lambdas
+Do not support indexed access
+Can easily be outputted as arrays or lists
+Lazy access supported
+Parallelizable
+
+
+
+=> Stream operations are divided into intermediate and terminal operations, and are combined to form stream pipelines. 
+=> A stream pipeline consists of a source (such as a Collection, an array, a generator function, or an I/O channel),
+   followed by zero or more intermediate operations such as Stream.filter or Stream.map; 
+   and a terminal operation such as Stream.forEach or Stream.reduce.
+   
+=> Intermediate operations return a new stream. They are always "lazy"; 
+   executing an intermediate operation such as filter() does not actually perform any filtering, 
+   but instead creates a new stream that, when traversed, contains the elements of the initial stream that 
+   match the given predicate.
+   
+=> In almost all cases, terminal operations are "eager", completing their traversal of the data source and processing 
+   of the pipeline before returning.
+   After the terminal operation is performed, the stream pipeline is considered consumed, and can no longer be used; 
+   if you need to traverse the same data source again, you must return to the data source to get a new stream.

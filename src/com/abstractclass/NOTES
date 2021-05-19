@@ -1,0 +1,43 @@
+==> Abstraction is the key concept of OOP languages
+==> In java we acheive it through abstract classes & interfaces
+==> Abstraction means hiding complex implementation details and revealing only what is required by the user
+==> Making coffee with a coffee machine, Withdrawing money from ATM are good examples of abstraction where do not
+    know the internal implemetation.
+==> abstract class Shape has a method -> getPerimeter();
+    child class Circle implements method getArea and return Circumference.
+    another child class Square implemets method and return perimeter of a square
+==> A class which contains the abstract keyword in its declaration is known as abstract class.
+==> Abstract classes may or may not contain abstract methods, i.e., methods without body ( public void get(); )
+==> But, if a class has at least one abstract method, then the class must be declared abstract.
+==> If a class is declared abstract, it cannot be instantiated.
+==> To use an abstract class, you have to inherit it from another class, provide implementations to the abstract methods in it.
+==> If you inherit an abstract class, you have to provide implementations to all the abstract methods in it.
+==> Can abstract class be final in Java?
+	NO.
+==> Can abstract classes have constructors ?
+	YES. That we be called when we instantiate its child class (through constructor chaining)
+==> Can bastract classes have static fields?
+    YES. just as any other normal class.
+==> Can abstract class implement interface? Do they require to implement all methods?
+    YES. 
+    NO.
+==> Which should we use: abstract class OR interface?
+	We can not add any implemented method in an interface. But abstract class allows us to add any number of implemented
+	or unimplemented methods.
+	If too many methods are present in an interface, then it becomes a pain to provide implementation for all the methods
+	in the class that implements that interface. Whereas if we extend from an abstract class, there is no such compulsion
+	to provide implementation to all abstract methods( if we declare the implementing class also as abstract)
+	
+==> Then why do we have interfaces?
+    Because we can not extends multiple classes as Multiple inherirtance is not allowed in java(DIAMOND PROBLEM) 
+    But we can implement more than one one interface. (NO DIAMOND PROBLEM IN INTERFACES)
+    Or if its just one unimplemented method, then its better to use interface. For ex Comparable interface that has 
+    just one unimplemented method compareTo(T o) 
+
+==> An class implementing an interface , can leave the interface methods UNimplemneted with NO compilation error
+    if and only if it is an abstract class. (See MyAbstractClass.java and MyInterface.java)
+    
+==> We can not have any method marked as abstract and private at the same time. Because private methods can not 
+    be overridden.
+    
+==> We can run abstract class in java like any other class if it has main() method.

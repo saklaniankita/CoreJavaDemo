@@ -1,0 +1,5 @@
+==> When we extend an interface that contains a default method, we can perform following,
+
+1. Not override the default method and will inherit the default method.
+2. Override the default method similar to other methods we override in subclass..
+3. Redeclare default method as abstract, which force subclass to override it.

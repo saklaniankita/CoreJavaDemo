@@ -1,0 +1,5 @@
+Sometimes t1.isInterrupted() returns true sometimes it returns false
+doubt in class NameThread.java
+why wait throws Interrupted Exception???
+
+

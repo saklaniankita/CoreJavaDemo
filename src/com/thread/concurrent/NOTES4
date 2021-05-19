@@ -1,0 +1,22 @@
+-> you can NOT put a lock on primitive variable while synchronzing
+
+-> SEMAPHORE is also a synchronization tool wherein more than one thread can enter the critical section
+   depending upon the no.of permits allowed while creating Semaphore
+   					Semaphore sem = new Semaphore(10);
+
+-> Threads Vs Semaphore:
+           LOCKS															SEMAPHORE
+    1. Locks allow only one user per resource				No. of users to one or more resources can be set in the constructor
+    
+	2. Lock has one owner thread at a time					No concept of owner thread
+															Many threads can acquire the permit
+															Same thread can acquire the permit multiple times
+															
+    3. lock can be released by the same thread				Semaphore can be released by any thread, even by the one
+       that has put a lock over it. Only after the			which has not acquired it. This is a problem with Semaphores
+       lock has been released, some other thread			But this property of Semaphore can be constructively used in
+       can access the resource							    Produecer Consumer Problem. See ProducerConsumer.java 
+       																
+	3. Locks are RE-ENTRANT									Binary Semaphore are NOT Renentrant
+	   See LockOne.java										See SemaphoreOne.java
+	   

@@ -1,0 +1,25 @@
+Integer j = 1;          // autoboxing
+int i = new Integer(1); // unboxing
+
+Memory Consumption of Primitive datatype:
+boolean – 1 bit
+byte – 8 bits
+short, char – 16 bits
+int, float – 32 bits
+long, double – 64 bits
+
+Memory consumption of Wrapper classes/Reference Type:
+Boolean – 128 bits
+Byte – 128 bits
+Short, Character – 128 bits
+Integer, Float – 128 bits
+Long, Double – 192 bits
+
+It is much higher in case of Wrapper classes/Reference types
+-> the primitive types live in the stack while the reference types live in the heap.
+   So, operations for primitive types are faster than those for wrapper classes
+-> Default values for primitive types are are 0, 0.0f, 0.0d, false
+   Default value for Reference types is always NULL
+
+   So, primitives types are much faster and occupy less memory,
+   But while using generics, Java doesn't allow the usage of primitive types
