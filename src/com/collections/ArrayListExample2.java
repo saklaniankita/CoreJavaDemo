@@ -11,7 +11,7 @@ import java.util.ListIterator;
  * @author Ankita
  *
  */
-public class ListExample2 {
+public class ArrayListExample2 {
 	public static void main(String[] args) {
 		List list = new ArrayList();
 		list.add(27);

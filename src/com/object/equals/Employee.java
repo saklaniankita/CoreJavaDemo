@@ -5,17 +5,17 @@ import java.util.HashSet;
 /**
  * Try this example as follows 1. Comment Equals and hashcode---> Observe the
  * output. David will not be removed from hashset because equals method is still
- * not overriden and as per default implementation of equals method it is
+ * not overridden and as per default implementation of equals method it is
  * altogether a different element that does not exist in the hashset
  * 
- * 2. Uncomment equals method---> Now that we have overriden equals method,
+ * 2. Uncomment equals method---> Now that we have overridden equals method,
  * David should be removed from the hashset but that does not happen. HashSet
  * ends up searching for the stored David object in the wrong bucket of the
  * hashtable and so is unable to find and remove it, despite the two objects
  * being equal (using equals() i.e...Please see image Hashing.PNG). 
  * 
  * 3. Uncomment hashcode method--->When searching for an object to be removed
- * using an ‘equal but different object’, HashSet needs to search for an object
+ * using an ï¿½equal but different objectï¿½, HashSet needs to search for an object
  * in the same bucket. Otherwise, as in our case, with the hashcodes of the 2
  * objects being different, HashSet ends up searching in the wrong bucket and is
  * unable to find the object.
@@ -51,13 +51,13 @@ public class Employee {
 //				&& this.name.equalsIgnoreCase(empObj.name);
 //	}
 
-	@Override
-	public int hashCode() {
-	  int hash = 1;
-	  hash = hash * 17 + this.name.hashCode();
-	  hash = hash * 31 + this.age;
-	  return hash;
-	}
+//	@Override
+//	public int hashCode() {
+//	  int hash = 1;
+//	  hash = hash * 17 + this.name.hashCode();
+//	  hash = hash * 31 + this.age;
+//	  return hash;
+//	}
 
 	public static void main(String args[]) {
 		HashSet<Employee> empHashSet = new HashSet<Employee>();
@@ -79,26 +79,26 @@ public class Employee {
 //		return result;
 //	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (!(obj instanceof Employee))
-			return false;
-		Employee other = (Employee) obj;
-		if (age == null) {
-			if (other.age != null)
-				return false;
-		} else if (!age.equals(other.age))
-			return false;
-		if (name == null) {
-			if (other.name != null)
-				return false;
-		} else if (!name.equals(other.name))
-			return false;
-		return true;
-	}
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (!(obj instanceof Employee))
+//			return false;
+//		Employee other = (Employee) obj;
+//		if (age == null) {
+//			if (other.age != null)
+//				return false;
+//		} else if (!age.equals(other.age))
+//			return false;
+//		if (name == null) {
+//			if (other.name != null)
+//				return false;
+//		} else if (!name.equals(other.name))
+//			return false;
+//		return true;
+//	}
 
 }

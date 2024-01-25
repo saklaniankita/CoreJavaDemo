@@ -5,7 +5,7 @@ Iterators can be fail-fast or fail-safe
                                         OR
  -> when one Thread is iterating over collection object and other thread structurally modify Collection either by 
     adding, removing or modifying objects on underlying collection, then ConcurrentModification exception is thrown.
-    Except through itertaor's own method i.e when the same thread modifies the collection.
+    Except through iterators own method i.e when the same thread modifies the collection.
  -> Every fail fast collection has a modCount field, to represent how many times the collection has changed/modified.
     So at every modification of this collection we increment the modCount value. For example the modCount is incremented in below cases:
      1. When one or more elements are removed.
@@ -20,8 +20,11 @@ Iterators can be fail-fast or fail-safe
 ===> FAIL SAFE
  -> No exception is thrown even if the collection is modified after the iterator has been created because these iterators
     work on a different copy of original collection
- -> Iterators on Collections from java.util.concurrent package such as ConcurrentHashMap, CopyOnWriteArrayList, etc. 
+ -> Iterators on Collections from java.util.concurrent package such as "ConcurrentHashMap", "CopyOnWriteArrayList", etc.
     are Fail-Safe in nature.
+ -> As we know Collection.synchronizedList() also provides thread safety. But Using Concurrent package classes is
+    preferred because multiple thread can access the data whereas in Collection.synchronizedList() method, performance
+    is hit because at a time only one thread has access.
  -> DISADVANTAGES:
     1) Since we are iterating over a copy of original collection, any changes made in the original collection
        while iterating may not be considered by the iterator

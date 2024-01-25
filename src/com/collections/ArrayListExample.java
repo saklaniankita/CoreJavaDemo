@@ -9,7 +9,7 @@ import java.util.Vector;
  * @author Ankita
  *
  */
-public class ListExample {
+public class ArrayListExample {
 	public static void main(String[] args) {
 		List list1 = new ArrayList();
 		list1.add(1);

@@ -18,7 +18,7 @@ public class PQExample {
 //		System.out.println("++++"+str);
 		Iterator<String> itr = pq.iterator();
 		while (itr.hasNext()) {
-			System.out.println(itr.next());
+			System.out.println(pq.poll());
 		}
 	}
 }
