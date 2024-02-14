@@ -1,9 +1,4 @@
-Not a data structure
-Designed for lambdas
-Do not support indexed access
-Can easily be outputted as arrays or lists
-Lazy access supported
-Parallelizable
+
 
 ==> The features of Java stream are mentioned below:
     -> stream() method is a default method in Collection interface which returns an Object of Stream class as follows
