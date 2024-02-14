@@ -7,7 +7,7 @@ package com.blocks;
  * 
  * STATIC blocks(in sequence) > CONSTRCUTOR Blocks(in sequence) > Constructors
  * 
- * Static fields are initialized accoding to their placement in the code (See GFG.java)
+ * Static fields are initialized according to their placement in the code (See GFG.java)
  * 
  * @author Ankita
  *

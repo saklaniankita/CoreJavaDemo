@@ -15,7 +15,7 @@ import java.util.TreeSet;
 public class EmployeeTreeSet {
 	public static void main(String[] args) {
 		Employee emp1 = new Employee(22, "Aakash", 3);
-		Employee emp2 = new Employee(1, "Anu", 6);
+		Employee emp2 = new Employee(1, "Anu", 11);
 		Employee emp5 = new Employee(2, "Anu", 11);
 		Employee emp3 = new Employee(52, "Sam", 23);
 		Employee emp4 = new Employee(23, "Bob", 17);

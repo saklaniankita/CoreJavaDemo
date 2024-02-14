@@ -2,9 +2,8 @@ package com.java8.lambdafunction;
 
 /**
  * Functional interface has just ONE UNIMPLEMENTED method and any number of
- * default or static methods.
- * 
- * Functional interfaces can be instantiated
+ * default or static methods or private methods.
+ *
  * 
  * IMPORTANT : Lambda Expressions can be assigned only to Functional interface
  *           EX: Runnable, Comparable<T>

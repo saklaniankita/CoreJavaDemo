@@ -85,6 +85,8 @@ public class CloneTwo implements Cloneable {
 		System.out.println("c1 == c2 " + (c1 == c2));
 		System.out.println("c1.getClass() == c2.getClass() " + (c1.getClass() == c2.getClass()));
 		System.out.println("c2.equals(c1) " + (c2.equals(c1)));
+		System.out.println("c1.num "+c1.num);
+		System.out.println("c2.num "+c2.num);
 
 	}
 }

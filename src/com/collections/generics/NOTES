@@ -1,0 +1,49 @@
+=>GENERICS
+->Generics means parameterized types
+->provides type safety right at compile time.
+->Code Reuse: We can write a method/class/interface once and use it for any type we want.
+               See Test.java
+
+->If we do not use generics then while data retrieval, we may have to typecast each element individually
+  which we don't want.
+                   //Without Generics
+                   ArrayList al = new ArrayList();
+                   al.add("Sachin");
+                   al.add("Rahul");
+
+                   // Typecasting is needed without generics
+                   String s1 =(String)al.get(0);
+                   String s2 = (String)al.get(1);
+
+
+                   //With Generics
+                    ArrayList<String> al = new ArrayList<String>();
+                    al.add("Sachin");
+                    al.add("Rahul");
+
+                    // Typecasting is NOT needed with generics
+                    String s1 =(String)al.get(0);
+                    String s2 = (String)al.get(1);
+
+
+->the type argument passed to the type parameter must be a reference type. If primitive type is used
+   there will be CTE
+   Test<Integer> test = new Test<Integer>(); CORRECT
+   Test<int> test = new Test<int>();   WRONG / CTE
+
+-> List<Number> list1 = new ArrayList<Integer>(); //CTE
+   List<Number> list1 = new ArrayList<Number>();  //CORRECT
+
+->But primitive type arrays can be passed to the type parameter because arrays are reference types.
+  ArrayList<int[]> a = new ArrayList<int[]>();
+
+=> WILDCARDS
+->The question mark (?) is known as the wildcard in generic programming.
+->It represents an unknown type.
+->unbounded wildcards <?>
+->upper bound wildcard  <? extends A> : Class A or any sub class of A is acceptable
+->Lower bounded wildcard <? super A> : Class A or any super class of A is acceptable
+->**** see TestGenerics.java
+
+*****You can not add to a list with generic <? extends E>
+     On the other hand it is OK to add to a list with generic <? super E>

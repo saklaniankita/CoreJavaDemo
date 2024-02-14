@@ -14,6 +14,7 @@ public class ThreadStatesFour {
 			public void run() {
 				try {
 					Thread.sleep(2000);
+					System.out.println("thread t1 done sleeping..");
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

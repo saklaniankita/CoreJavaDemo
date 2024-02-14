@@ -1,7 +1,7 @@
 ==> Why do we need instance block when we have constructors?
-    Say, we have more than one constructors, each performing a specific initailization. And each constructor has few lines
+    Say, we have more than one constructors, each performing a specific initialization. And each constructor has few lines
     of codes which is common for every constructor. Here we can make use of instance block and put those common lines
-    of code in the instance block instead of putting them in every ocnstructor. That will reduce the number of lines 
+    of code in the instance block instead of putting them in every constructor. That will reduce the number of lines
     of code.
     
 ==> Nested classes can be static AND Outer class can NEVER be static 

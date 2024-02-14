@@ -1,0 +1,17 @@
+=> Arrays.sort uses quick sort to sort primitive Arrays and Merge Sort to sort Object Arrays
+=> Collections.sort uses merge sort
+
+=>List<String> list = Arrays.asList("John", "Webb", "Tony"); creates a unmodifiable list backed by an Array.
+  so list.add("John") will give UnsupportedOperationException at Runtime.
+
+=> ArrayList<Integer> myList = List.of(1, 2, 3, 5); returns an unmodifiable list
+=> So, if myList is passed to Collections.sort(myList) method, its going to give UnsupportedOperationException
+   at Runtime. Because Collections.sort accepts a mutable/modifiable list.
+
+=> Streams don’t change the original data structure, they only provide the result as per the pipelined methods.
+ That is why in JAVA 8, We can call stream() method on the list even if it is returned by
+ List.of() or Array.asList() methods which actually gives an unmodifiable list as follows
+           List<Integer> myList = List.of(10, 12, 32, 11, 10, 21, 12);
+           myList.stream().distinct().sorted().forEach(System.out::println);
+
+ =>Lambda Expressions can be assigned only to Functional interfaces

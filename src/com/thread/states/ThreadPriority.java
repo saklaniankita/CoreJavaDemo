@@ -41,10 +41,10 @@ public class ThreadPriority {
 		thread3.setName("THREAD C");
 		thread3.setPriority(Thread.NORM_PRIORITY);
 		
-		thread3.start();
+		thread1.start();
 		Thread.sleep(1000);
 		thread2.start();
 		Thread.sleep(1000);
-		thread1.start();
+		thread3.start();
 	}
 }

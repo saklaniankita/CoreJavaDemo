@@ -23,7 +23,7 @@ import java.io.*;
  * @author Ankita
  * 
  */
-public class Child extends Parent implements Serializable {
+public class Child extends Parent {
 	private static final long serialVersionUID = 1L;
 	int c = 11;
 	String d = "HeyChild";

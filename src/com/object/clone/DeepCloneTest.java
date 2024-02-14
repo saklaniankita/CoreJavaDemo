@@ -55,19 +55,19 @@ public class DeepCloneTest implements Cloneable {
 		certs.add("CERT2");
 		certs.add("CERT3");
 
-		DeepCloneTest clone1 = new DeepCloneTest("Ajay", 24, certs);
-		DeepCloneTest clone2 = (DeepCloneTest) clone1.clone();
+		DeepCloneTest obj = new DeepCloneTest("Ajay", 24, certs);
+		DeepCloneTest clonedObj = (DeepCloneTest) obj.clone();
 
 		System.out.println("Clone done......");
 
-		List<String> certList = clone1.getCertifications();
+		List<String> certList = obj.getCertifications();
 		certList.add("CERT4");
 		certList.add("CERT5");
 
-		clone1.setCertifications(certList);
-		System.out.println("After change in clone1 certificates");
-		System.out.println("clone1.getCertifications() : " + clone1.getCertifications());
-		System.out.println("clone2.getCertifications() : " + clone2.getCertifications());
+		obj.setCertifications(certList);
+		System.out.println("After change in obj certificates");
+		System.out.println("obj.getCertifications() : " + obj.getCertifications());
+		System.out.println("clonedObj.getCertifications() : " + clonedObj.getCertifications());
 
 	}
 }

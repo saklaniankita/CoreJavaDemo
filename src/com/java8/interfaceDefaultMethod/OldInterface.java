@@ -6,7 +6,7 @@ public interface OldInterface {
 
 
 
-	default void newJava8Method(int a) {
+	 default void newJava8Method(int a) {
 		a = a + 2;
 		System.out.println("I am an implemented method of interface " + a);
 	}

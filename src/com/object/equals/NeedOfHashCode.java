@@ -42,13 +42,15 @@ public class NeedOfHashCode {
 		return this.color.equals(((NeedOfHashCode) obj).color);
 	}
 
+
+
 	/**
 	 * See the difference in output with and without hashcode method
 	 */
-//	@Override
-//	public int hashCode() {
-//		return (31 + this.color.hashCode());
-//	}
+	@Override
+	public int hashCode() {
+		return (31 + this.color.hashCode());
+	}
 
 	public static void main(String[] args) {
 		NeedOfHashCode a1 = new NeedOfHashCode("green");

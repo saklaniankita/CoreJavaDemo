@@ -1,0 +1,185 @@
+https://www.javatpoint.com/collections-in-java
+
+java.util package
+
+===>LIST INTERFACE
+->Insertion order has to be maintained then we should go for some List Implementation
+->it is an ordered collection
+->indexed collection, we can add or remove an element from any particular index
+->Duplicates allowed
+->more than one null values allowed
+1) In case it is a single threaded environment, we should go for either ArrayList or Linked List which is non synchronized
+and synchronization in case of single threaded environment will make it uselessly slow
+2) But for a multithreaded environment, we should go for Vector which is synchronized.
+3) Insertion/Deletion in case of LinkedList is easier because we need to modify just two pointers to insert an element
+  But in case of ArrayList , the whole list needs to be shifted to insert just one element.
+  ->On the other hand, Arraylist is better to use than LinkedList when search operation is more frequent
+  In short, ArrayList is better to access data whereas LinkedList is better to manipulate data.
+5) The stack is the subclass of Vector. It implements the last-in-first-out LIFO data structure, i.e., Stack.
+It has only 5 methods like push, pull, peek, empty, search
+-> if we want to get the first element from a stack (of say 100 elements), then we will have to perform 100
+   pop operations, So better to use Stack when we have fewer number of elements to be stored.
+   When elements are higher in number then better go for either arraylist or LinkedList that has get(int i) method
+   to retrieve element from any index of list in one go.
+-> Collections.synchronizedList() is preferred over Vector which is synchronized
+
+==> Arraylist
+   --> ArrayList in Java is a Resizable-array implementation of the List interface.
+   --> Internally ArrayList class uses an Array of Object class to store its elements.
+   --> When initializing an ArrayList you can provide initial capacity, But still the size would be zero because
+      there are no elements yet in the list.
+   --> If initial capacity is not specified then default capacity is used to create an array. Default capacity is 10.
+   --> When an element is added to an ArrayList it first verifies whether it can accommodate the new element or
+       it needs to grow, in case capacity has to be increased then the new capacity is calculated which is
+       50% more than the old capacity and a new array is created with this new capacity.
+   --> Please note there is a difference between size and capacity. list.size() returns the number of elements in the list
+       whereas there is no direct method to retrieve the capacity.
+   --> When elements are removed from an ArrayList space created by the removal of an element has to be filled
+       in the underlying array. That is done by Shifting any subsequent elements to the left. similarly while
+       adding at a particular index, we'll have to shift elements to the right. that's why adding/deleting elements
+       from an ArrayList is cumbersome. It si better to go for LinkedList for insertions/deletions where we just need to
+       modify two pointers.
+   -->ArrayList are good for searching elements using get() method.
+
+===> LinkedList
+    -->this class implements both List and Deque interface, thus having hybrid characteristics and behaviors of
+       list and queue.
+    -->good for insertions/deletions
+    -->we  have 3 types of Linked List as far as internal structure is concerned
+       1. Singular Linked List
+       2. Doubly Linked List
+       3. Circular Linked List
+    --> NO initial Capacity for LinkedList
+
+
+==> Array & ArrayList
+  ->Array is FIXED size and we need to initialize the array with its capacity
+    ArrayList is DYNAMIC i.e capacity may change as and when required and we dont need to initialize it(though we CAN)
+  ->Array stores primitive datatypes as well as Wrapper classes
+    ArrayList stores only Wrapper class. even if we add primitive datatype, it will internally autobox.
+
+===> SET INTERFACE
+    -> If you do not want duplicates, go for Set
+    -> It allows single null value (Tree set don't)
+    -> They are unordered (LinkedHashSet is ordered)
+    ->not synchronized, can be synchronized using Collections.synchronizedSet(set)
+
+ ==>HASHSET
+    -> HashSet uses hashing internally i.e elements are inserted using their hash codes which must  be unique
+    -> it also accepts collection as values provided that they are unique according to their own equals() and
+       hashcode() implementation
+    -> HashSet stores values in a "HashMap" internally with its keys as hashSet elements and values as a constant
+       called PRESENT i.e when we create a HashSet as HashSet<String> hs = new HashSet<String>(); then inside HashSet
+       constructor we have the following code:
+                        HashSet(){
+                        map = new HashMap<String, Object>();
+                        }
+                        public Boolean add(Object o){
+                        	return map.put(o, PRESENT);
+                        }
+       Since keys are unique in a HashMap, it provides uniqueness guarantee of Set interface.
+       & HashSet's add(Object a) method internally calls HashMap's put(Object a, PRESENT)
+    -> HashSet also implements Serializable and Cloneable interfaces
+    -> HashSet is not synchronized, we use Collections.synchronizedSet(set) to make it synchronized
+    -> Hashset can  be created with constructors using initial capacity and load factor
+            see SetExample.java
+        initial capacity: initial capacity of backing hashmap. default value is 16.
+        load factor: load factor of backing hashmap. It decides when to increase the capacity of the map.
+        default value is .75
+    -> The iterators returned by this class' iterator method are **fail-fast and may throw
+      ConcurrentModificationException if the set is modified at any time after the iterator is
+      created, in any way except through the iterator's own remove() method.
+
+
+ ==>LINKED HASHSET (maintains insertion order)
+   ->A LinkedHashSet is an ordered version of HashSet that maintains a "doubly-linked List" across all elements.
+   ->Use this class instead of HashSet when you care about the insertion oredr order.
+   ->When you iterate through a HashSet the order is unpredictable, while a LinkedHashSet lets you iterate
+     through the elements in the order in which they were inserted.
+
+ ==>TREE SET (sorted)
+   ->implements SortedSet interface
+   -> internally stored as TreeMap
+   ->elements are stored in ascending order. That's why elements being stored in TreeSet must be homogenous and
+     comparable
+   ->Java classes like String, Integer etc already implements Comparable interface and hence they
+     are automatically sorted when added to TreeSet.
+   ->For adding user defined objects, we must implement either Comparable or Comparator interface
+   -> If there is single criteria to compare elements , go for Comparable interface(see TreeSetComparableExample.java)
+   -> It there are multiple criteria to compare elements, go for Comparator interface(see TreeSetComparatorExample.java)
+   ->Though set accepts one Null value, TreeSet does not accept even one Null value because while inserting, Null will
+     be compared to the existing elements to get sorted and NUll can not be compared to any value so NULLPointerException
+     is thrown at runtime
+
+
+
+
+===> QUEUE
+->  Queue interface maintains the first-in-first-out order.
+   * It can be defined as an ordered list as it maintains insertion order, FIFO
+   * Queue doesn't permit NULL values.
+   * The head of the queue is the least element with respect to the specified ordering.
+   * If multiple elements are tied for least value, the head is one of those elements & ties are broken arbitrarily.
+   * The queue retrieval operations poll, remove, peek, and element access the element at the head of the queue.
+   * with queues, operations on the head are fastest (e.g. offer() and remove()),
+     whereas operations on middle elements are slow (e.g. contains(e) and remove(e)).
+   * LinkedList & ArrayDeque implements Dequeue (LinkedList implements both queue and List)
+     ==> LINKED LIST
+     * Implements Dequeue interface
+     * NOT thread safe
+     * Consider using a LinkedList when you want fast adding and fast removing elements
+       at both ends, plus accessing elements by index.
+
+     ==> ARRAY DEQUEUE
+     * implements Dequeue interface
+     * NOT thread safe
+     * Double ended queue
+
+     ==> PRIORITY QUEUE
+      * Directly implements Queue interface
+      * NOT thread safe
+      * We can not create PriorityQueue of Objects that are non-comparable
+      * PriorityQueue keeps the lowest element as per Comparator or Comparable at head position
+      * PriorityQueue are unbound queues.
+      * Fast retrieval from head and fast addition to tail.
+
+    ==> BLOCKING QUEUE interface (extends Queue interface):
+    *Its implementations are THREAD SAFE
+    *Java 5 comes with BlockingQueue implementations in the java.util.concurrent package.
+    *Its implementations include LinkedBlockingQueue, ArrayBlockingQueue, PriorityBlockingQueue, SynchronousQueue
+    *BlockingQueue interface supports flow control (in addition to queue) by introducing blocking
+      if either BlockingQueue is full or empty
+    *A thread trying to enqueue an element in a full queue is blocked until some other thread makes
+      space in the queue, either by dequeuing one or more element or clearing the queue completely.
+    *Similarly it blocks a thread trying to delete from an empty queue until some other threads inserts an item.
+    *BlockingQueue does not accept null value. If we try to enqueue null item, then it throws NullPointerException.
+         Unbound BlockingQueue : BlockingQueue blockingQueue = new LinkedBlockingDeque(); can grow indefinitely
+         Bound BlockingQueue : BlockingQueue blockingQueue = new LinkedBlockingDeque(5); maximum capacity defined
+    => we create a blocking queue which is shared by a 1) producer thread(that generates data and put it into the queue)
+       and 2) consumer thread(which removes data from the queue) see package com.collections.blockingqueue
+
+
+===> MAP
+   ->unique keys, If we try to add same key again, old one will be replaced by the new one
+   -> all these four implementations of Map are serializable and cloneable. WeakHashMap does not implement Cloneable interface
+   ->HashMap =>	HashMap is the implementation of Map, but it doesn't maintain any order. NULL Keys/Values allowed
+                n Java, when you put an object into a HashMap, the hashCode method of the key object is called,
+                and the returned hash code is used to find a bucket location where the value is stored.
+                When you try to retrieve an object from the HashMap, the hashCode method is called again and uses the
+                returned hash code to find the bucket where the value is stored.
+   ->LinkedHashMap => LinkedHashMap is the implementation of Map. It inherits HashMap class. It maintains insertion order.
+                      NULL Keys/Values allowed
+                      This also uses hashing internally
+   ->TreeMap =>	TreeMap is the implementation of Map and SortedMap. It maintains ascending order. Null keys not allowed
+                 Null values allowed
+   ->Hashtable => Similar to Hashmap but HashTable is "synchronized". Null keys/values NOT allowed
+                  This also uses hashing internally
+   ->WeakHashMap => if the object specified as key, is not being referenced, then it becomes available for garbage collection
+                    thus freeing up memory. See WeakHashMapDemo.java
+
+===> Enumeration vs Iterator
+    -> Iterator can be fail-fast or fail-safe in nature whereas Enumeration is always fail-safe i.e
+       it  never throws exception even if the underlying collection is modified while iterating
+    -> Iterator allows to remove the current element (itr.remove() method) whereas Enumeration can't do that
+    -> Iterator methods are hasNext() & next() and Enumeration methods are hasMoreElements() and nextElement()
+    -> So, Iterator is always preferred over Enumeration

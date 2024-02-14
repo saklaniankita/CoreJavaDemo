@@ -17,10 +17,10 @@ package com.thread.exception;
 public class ThreadExceptionOne extends Thread {
 	public void run() {
 		try {
-//			 synchronized (this) {
-//				System.out.println(this.getClass());
-//			 	this.wait(5000);
-//			 }
+			 synchronized (this) {
+				System.out.println(this.getClass());
+			 	this.wait(5000);
+			 }
 			this.wait(5000);
 
 			System.out.println("TASK");

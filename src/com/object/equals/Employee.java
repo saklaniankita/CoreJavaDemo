@@ -38,26 +38,26 @@ public class Employee {
 		return "Employee Name:" + this.name + "  Age:" + this.age;
 	}
 
-//	@Override
-//	public boolean equals(Object obj) {
-//		if (obj == this) {
-//			return true;
-//		}
-//		if (!(obj instanceof Employee)) {
-//			return false;
-//		}
-//		Employee empObj = (Employee) obj;
-//		return this.age == empObj.age
-//				&& this.name.equalsIgnoreCase(empObj.name);
-//	}
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == this) {
+			return true;
+		}
+		if (!(obj instanceof Employee)) {
+			return false;
+		}
+		Employee empObj = (Employee) obj;
+		return this.age == empObj.age
+				&& this.name.equalsIgnoreCase(empObj.name);
+	}
 
-//	@Override
-//	public int hashCode() {
-//	  int hash = 1;
-//	  hash = hash * 17 + this.name.hashCode();
-//	  hash = hash * 31 + this.age;
-//	  return hash;
-//	}
+	@Override
+	public int hashCode() {
+	  int hash = 1;
+	  hash = hash * 17 + this.name.hashCode();
+	  hash = hash * 31 + this.age;
+	  return hash;
+	}
 
 	public static void main(String args[]) {
 		HashSet<Employee> empHashSet = new HashSet<Employee>();

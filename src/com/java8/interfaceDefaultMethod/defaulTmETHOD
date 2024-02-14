@@ -2,7 +2,8 @@ JAVA is not purely OOP language because in OOPs support the concept of Objects a
 datatypes as well. Even if we use wrapper classes, internally it will perform unboxing to use primitive datatypes
 
 Interface:
-Through interface we achieve abstraction( one of 4 basic OOPS Concepts) i.e we define the common behaviour inside an interface and provide specific
+Through interface we achieve abstraction( one of 4 basic OOPS Concepts) i.e hiding internal implementation details
+we define the common behaviour inside an interface and provide specific
 details of that behaviour inside implementing classes. for example
 interface Shape{
     public float area(){}
@@ -30,9 +31,9 @@ private float side;
 }
 
 an interface can have following
-1. constant variables: public static final by default ***
-2. Abstract methods
-3. Default methods: implicitly private
+1. constant variables: public static final by default and must be initialized***
+2. Abstract methods : implicitly public
+3. Default methods: implicitly public
 4. private methods: provides encapsulation and code readability. can not be accessed outside an interface
 5. static methods: can be accessed outside the interface using interface name:  OldInterface.staticMethod();
 6. private static methods
@@ -50,3 +51,5 @@ When we extend an interface that contains a default method, we can perform follo
 2. Override the default method similar to other methods we override in subclass..
 3. Redeclare default method as "public" and "abstract", which force subclass to override it.
 a default method can NOT override Object class methods
+
+** "default" keyword tells us that this is an implemented method inside an interface and NOT inside a class

@@ -2,10 +2,10 @@
 ==> In java we acheive it through abstract classes & interfaces
 ==> Abstraction means hiding complex implementation details and revealing only what is required by the user
 ==> Making coffee with a coffee machine, Withdrawing money from ATM are good examples of abstraction where do not
-    know the internal implemetation.
+    know the internal implementation.
 ==> abstract class Shape has a method -> getPerimeter();
-    child class Circle implements method getArea and return Circumference.
-    another child class Square implemets method and return perimeter of a square
+    child class Circle implements method getPerimeter and return Circumference.
+    another child class Square implements getPerimeter method and return perimeter of a square
 ==> A class which contains the abstract keyword in its declaration is known as abstract class.
 ==> Abstract classes may or may not contain abstract methods, i.e., methods without body ( public void get(); )
 ==> But, if a class has at least one abstract method, then the class must be declared abstract.
@@ -29,7 +29,7 @@
 	to provide implementation to all abstract methods( if we declare the implementing class also as abstract)
 	
 ==> Then why do we have interfaces?
-    Because we can not extends multiple classes as Multiple inherirtance is not allowed in java(DIAMOND PROBLEM) 
+    Because we can not extends multiple classes as Multiple inheritance is not allowed in java(DIAMOND PROBLEM)
     But we can implement more than one one interface. (NO DIAMOND PROBLEM IN INTERFACES)
     Or if its just one unimplemented method, then its better to use interface. For ex Comparable interface that has 
     just one unimplemented method compareTo(T o) 

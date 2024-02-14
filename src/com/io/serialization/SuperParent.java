@@ -1,8 +1,9 @@
 package com.io.serialization;
 
+import java.io.Serial;
 import java.io.Serializable;
 
-public class SuperParent {
+public class SuperParent implements Serializable {
 	int superA = 9;
 	String superB = "HeySuperParent";
 

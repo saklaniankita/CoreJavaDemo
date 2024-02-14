@@ -10,9 +10,11 @@ public class InterThreadCommunication {
 		/**
 		 * Two reader threads that will wait for completion of book
 		 */
+		Thread alisThread = new Thread(new BookReader(book), "Alis");
 		Thread johnThread = new Thread(new BookReader(book), "John");
 		Thread macThread = new Thread(new BookReader(book), "Mac");
 
+		alisThread.start();
 		johnThread.start();
 		macThread.start();
 
@@ -20,7 +22,7 @@ public class InterThreadCommunication {
 		 * To ensure that two threads has started waiting
 		 */
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
