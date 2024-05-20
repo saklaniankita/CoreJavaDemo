@@ -7,7 +7,7 @@ package com.thread.join;
  * second starts only after first is terminated
  * 
  * Threads may take unreasonably long time to finish, we can put timing (EX:
- * t1.join(2000)) It means if the threda does not finish its task in 2 seconds
+ * t1.join(2000)) It means if the current thread does not finish its task in 2 seconds
  * then the current thread will go into waiting state and next thread will get a
  * chance to start
  * 
@@ -25,7 +25,6 @@ public class JoinThreadOne implements Runnable {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	public static void main(String[] args) throws InterruptedException {
@@ -41,7 +40,8 @@ public class JoinThreadOne implements Runnable {
 
 		// start first thread
 		t1.start();
-		t1.join(); //Other threads will go into BLOCKED state till t1 finishes exceution
+		t1.join(); //Other threads will go into BLOCKED state till t1 finishes execution
+		System.out.println(Thread.currentThread().getState());
 		System.out.println("Current state of t1 : " + t1.getState());
 
 		// start second thread

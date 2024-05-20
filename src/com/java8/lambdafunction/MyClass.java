@@ -2,7 +2,7 @@ package com.java8.lambdafunction;
 
 /**
  * OLDER WAY
- * 
+ *
  * @author Ankita
  *
  */

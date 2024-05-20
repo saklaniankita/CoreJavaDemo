@@ -49,7 +49,7 @@ public class FilterExample {
         num.stream().filter(condition2).map(n -> (n * n)).forEach(System.out::println);
 
         //Applying map function after filter with in built predicate
-        System.out.println("Printing Squares of positive odd Numbers without the use of Predicate: ");
+        System.out.println("Printing Squares of positive odd Numbers : ");
         num.stream().filter(n -> (n > 0)).filter(n -> (n % 2 != 0)).map(n -> (n * n)).forEach(System.out::println);
     }
 }

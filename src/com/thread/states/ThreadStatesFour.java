@@ -41,7 +41,11 @@ public class ThreadStatesFour {
 		}
 
 		// Checking the state of t2 after it calls join() on t1
-
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		System.out.println(t2.getState()); // Output : WAITING
 	}
 

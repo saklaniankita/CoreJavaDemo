@@ -92,8 +92,8 @@ It has only 5 methods like push, pull, peek, empty, search
 
 
  ==>LINKED HASHSET (maintains insertion order)
-   ->A LinkedHashSet is an ordered version of HashSet that maintains a "doubly-linked List" across all elements.
-   ->Use this class instead of HashSet when you care about the insertion oredr order.
+   ->A LinkedHashSet is an ordered version of HashSet i.e insertion order is maintained that maintains a "doubly-linked List" across all elements.
+   ->Use this class instead of HashSet when you care about the insertion order order.
    ->When you iterate through a HashSet the order is unpredictable, while a LinkedHashSet lets you iterate
      through the elements in the order in which they were inserted.
 
@@ -149,9 +149,10 @@ It has only 5 methods like push, pull, peek, empty, search
     *Its implementations include LinkedBlockingQueue, ArrayBlockingQueue, PriorityBlockingQueue, SynchronousQueue
     *BlockingQueue interface supports flow control (in addition to queue) by introducing blocking
       if either BlockingQueue is full or empty
-    *A thread trying to enqueue an element in a full queue is blocked until some other thread makes
-      space in the queue, either by dequeuing one or more element or clearing the queue completely.
-    *Similarly it blocks a thread trying to delete from an empty queue until some other threads inserts an item.
+    *A thread trying to enqueue an element in a full queue is blocked and throws IllegalStateException until some other
+    thread makes space in the queue, either by dequeuing one or more element or clearing the queue completely.
+    *Similarly it blocks a thread trying to delete from an empty queue and throws InterruptedException until some other
+     threads inserts an item.
     *BlockingQueue does not accept null value. If we try to enqueue null item, then it throws NullPointerException.
          Unbound BlockingQueue : BlockingQueue blockingQueue = new LinkedBlockingDeque(); can grow indefinitely
          Bound BlockingQueue : BlockingQueue blockingQueue = new LinkedBlockingDeque(5); maximum capacity defined
@@ -172,8 +173,8 @@ It has only 5 methods like push, pull, peek, empty, search
                       This also uses hashing internally
    ->TreeMap =>	TreeMap is the implementation of Map and SortedMap. It maintains ascending order. Null keys not allowed
                  Null values allowed
-   ->Hashtable => Similar to Hashmap but HashTable is "synchronized". Null keys/values NOT allowed
-                  This also uses hashing internally
+   ->Hashtable => Similar to Hashmap but HashTable is "synchronized". It has now been overtaken by Collections.synchronizedMap()
+                  or ConcurrentHashMap
    ->WeakHashMap => if the object specified as key, is not being referenced, then it becomes available for garbage collection
                     thus freeing up memory. See WeakHashMapDemo.java
 
@@ -183,3 +184,27 @@ It has only 5 methods like push, pull, peek, empty, search
     -> Iterator allows to remove the current element (itr.remove() method) whereas Enumeration can't do that
     -> Iterator methods are hasNext() & next() and Enumeration methods are hasMoreElements() and nextElement()
     -> So, Iterator is always preferred over Enumeration
+
+=> Arrays.sort uses quick sort to sort primitive Arrays and Merge Sort to sort Object Arrays
+=> Collections.sort uses merge sort
+
+=>List<String> list = Arrays.asList("John", "Webb", "Tony");
+  it is modifiable but returns a fixed size list backed by an Array.
+  you can not add or delete elements but you can still sort or rearrange them
+  so list.add("John") will give UnsupportedOperationException at Runtime.
+  But Collections.sort(list) will work fine.
+
+=> List<Integer> myList = List.of(1, 2, 3, 5); returns an unmodifiable list
+   so you can not add or delete or sort
+   if myList is passed to Collections.sort(myList) or
+   myList.add(6);
+   its going to give UnsupportedOperationException at Runtime.
+   Because Collections.sort accepts a mutable/modifiable list.
+
+=> Streams don’t change the original data structure, they only provide the result as per the pipelined methods.
+ That is why in JAVA 8, We can call stream() method on the list even if it is returned by
+ List.of() or Array.asList() methods which actually gives an unmodifiable list as follows
+           List<Integer> myList = List.of(10, 12, 32, 11, 10, 21, 12);
+           myList.stream().distinct().sorted().forEach(System.out::println);
+
+ =>Lambda Expressions can be assigned only to Functional interfaces

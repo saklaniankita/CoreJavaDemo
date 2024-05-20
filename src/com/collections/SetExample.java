@@ -36,7 +36,7 @@ public class SetExample {
 
         List<? extends Number> list1 = new ArrayList<>();
        // list1.add(10);
-        //list1.remove(10);
+        list1.remove(10);
 
         List<? super Integer> list2 = new ArrayList<>();
         list2.add(10);

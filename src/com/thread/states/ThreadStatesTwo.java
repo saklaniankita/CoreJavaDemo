@@ -14,7 +14,7 @@ public class ThreadStatesTwo {
 
 		System.out.println(t.getState()); // Output : RUNNABLE
 		
-		t.join();
+		t.join(4000);
 		
 		System.out.println(t.getState()+"____"+Thread.currentThread().getState());
 		

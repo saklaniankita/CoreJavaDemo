@@ -13,7 +13,7 @@ public class ThreadStatesExample implements Runnable {
 
 	@Override
 	public void run() {
-		System.out.println("State inisde run : " + t.getState());
+		System.out.println("State inside run : " + t.getState());
 		try {
 			for (int i = 1; i <= 3; i++) {
 				System.out.println(t.getName() + " : " + i);

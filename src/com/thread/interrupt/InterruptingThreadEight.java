@@ -9,7 +9,7 @@ package com.thread.interrupt;
  * 
  * See all cases 1) when Thread.interrupted() is called before Thread.sleep()
  * (InterruptingThreadSeven.java) 2) when Thread.interrupted() is called in
- * catch block (InterruptingThreadEight.java) 3) when Thread.interrupted is
+ * catch block (InterruptingThreadEight.java) 3) when Thread.interrupted() is
  * called outside the try-catch block (InterruptingThreadEight.java)
  * 
  * @author Ankita
@@ -21,7 +21,7 @@ public class InterruptingThreadEight extends Thread {
 			Thread.sleep(1000);
 			System.out.println("TASK");
 		} catch (InterruptedException e) {
-			System.out.println("Is the thread interruped : " + Thread.interrupted());
+			System.out.println("Is the thread interrupted : " + Thread.interrupted());
 		}
 		System.out.println("Is the thread interrupted now : " + Thread.interrupted());
 	}

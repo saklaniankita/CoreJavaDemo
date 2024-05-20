@@ -45,7 +45,7 @@ we can rather put the constants in an Enum or a separate class and make a static
 
 a marker interface is one that has no methods. example Serializable and Cloneable
 
-When we extend an interface that contains a default method, we can perform following,
+When we implement  an interface that contains a default method, we can perform following,
 
 1. Not override the default method and will inherit the default method.
 2. Override the default method similar to other methods we override in subclass..

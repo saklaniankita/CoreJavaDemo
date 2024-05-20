@@ -5,7 +5,7 @@ public class Driver {
 		ThreadStatesExample thread1 = new ThreadStatesExample("MyThread");
 		try {
 			System.out.println("Main Thread is waiting...");
-			Thread.sleep(1000);
+			Thread.sleep(5000);
 			System.out.println("Thread State after sleep : " + thread1.t.getState());
 			thread1.t.join();
 			System.out.println("Thread State after join : " + thread1.t.getState());

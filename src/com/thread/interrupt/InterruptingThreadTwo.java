@@ -32,6 +32,6 @@ public class InterruptingThreadTwo extends Thread {
 		t1.start();
 		t1.interrupt();
 		System.out.println("t1.isInterrupted() : " + t1.isInterrupted());
-		// System.out.println("Thread.interrupted() : " + Thread.interrupted());
+		 System.out.println("Thread.interrupted() : " + Thread.interrupted());
 	}
 }

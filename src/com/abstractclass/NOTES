@@ -16,14 +16,12 @@
 	NO.
 ==> Can abstract classes have constructors ?
 	YES. That we be called when we instantiate its child class (through constructor chaining)
-==> Can bastract classes have static fields?
+==> Can abstract classes have static fields?
     YES. just as any other normal class.
 ==> Can abstract class implement interface? Do they require to implement all methods?
     YES. 
     NO.
 ==> Which should we use: abstract class OR interface?
-	We can not add any implemented method in an interface. But abstract class allows us to add any number of implemented
-	or unimplemented methods.
 	If too many methods are present in an interface, then it becomes a pain to provide implementation for all the methods
 	in the class that implements that interface. Whereas if we extend from an abstract class, there is no such compulsion
 	to provide implementation to all abstract methods( if we declare the implementing class also as abstract)
@@ -32,9 +30,17 @@
     Because we can not extends multiple classes as Multiple inheritance is not allowed in java(DIAMOND PROBLEM)
     But we can implement more than one one interface. (NO DIAMOND PROBLEM IN INTERFACES)
     Or if its just one unimplemented method, then its better to use interface. For ex Comparable interface that has 
-    just one unimplemented method compareTo(T o) 
+    just one unimplemented method compareTo(T o)
+    Lambda expressions can be used with only functional interfaces
 
-==> An class implementing an interface , can leave the interface methods UNimplemneted with NO compilation error
+==> When to go for abstract classes
+    because abstract classes have constructors
+    Though interface can have default implemented methods(since Java 8)
+    ,it still can not override Object class methods but Abstract class can.
+    Inside abstract class we can create instance and static blocks
+
+
+==> An class implementing an interface , can leave the interface methods unimplemented with NO compilation error
     if and only if it is an abstract class. (See MyAbstractClass.java and MyInterface.java)
     
 ==> We can not have any method marked as abstract and private at the same time. Because private methods can not 

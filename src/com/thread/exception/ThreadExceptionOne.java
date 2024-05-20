@@ -21,7 +21,7 @@ public class ThreadExceptionOne extends Thread {
 				System.out.println(this.getClass());
 			 	this.wait(5000);
 			 }
-			this.wait(5000);
+			//this.wait(5000);
 
 			System.out.println("TASK");
 		} catch (InterruptedException e) {

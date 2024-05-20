@@ -1,0 +1,56 @@
+-> The main use of the static keyword in Java is memory management.
+   Whenever we place a static keyword before initialising a particular class’s methods or variables,
+   these static methods and variables belong to the class instead of each of their instances or objects.
+
+-> Accessibility of the Static Variable in Java
+   Static variables can be accessed by calling the class name of the class. There is no need to create an instance of the class for accessing the static variables because static variables are the class variables and are shared among all the class instances.
+
+   The static variables can be accessed in all types of methods: static or non-static.
+   We cannot access non-static variables in static methods because non-static variables can only be accessed by creating an instance of the class.
+   However, static methods can be called without creating an instance of the class.
+   This leads to reference error for the non-static variable because non-static variables can be accessed only through an instance of the class that’s why static methods cannot access non-static variables.
+   Another way of understanding this: If we have not created any instance of a class and call the static method which contains a non-static reference, which object should the non-static member point to?
+   Code:
+
+   public class Scaler {
+
+     int number;
+
+     static void check() {
+       // Error as non-static number is accessed in a static method
+       System.out.println(number);
+     }
+
+     void check1() {
+       System.out.println(number); // Valid accessing
+     }
+   }
+
+
+->Static methods can be overloaded but not overridden
+-> Static means "same for all the instances". So to access it we do not need to create any instance
+    public class Example{
+    	private Static String name = "Ankita";
+    	public void show{
+    			System.out.println("
+    		}
+
+-> An inner class CAN be declared static but NOT the top level class
+-> Static means same for all instances. There is no point of creating a top level class as static.
+
+-> Following are major differences between static inner class and non-static inner class.
+   Static inner class is also called nested class
+
+1) Nested static class doesn't need reference of Outer class,
+   but Non-static inner class requires Outer class reference.
+   {Refer TestClass3.java}
+
+2) Inner class(or non-static nested class) can access both static and non-static members of Outer class.
+   A static inner class can access static members directly. And to access non static members of outer class,
+   it will have to create an instance of outer class.s
+   {Refer TestClass4.java}
+
+3) An instance of Inner class cannot be created without an instance of outer class and
+   an Inner class can reference data and methods defined in Outer class in which it nests,
+   so we don't need to pass reference of an object to the constructor of the Inner class.
+   For this reason Inner classes can make program simple and concise.

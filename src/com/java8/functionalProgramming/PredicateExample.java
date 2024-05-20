@@ -3,6 +3,14 @@ package com.java8.functionalProgramming;
 import java.util.List;
 import java.util.function.Predicate;
 
+/**
+ *Predicate<T> is a functional interface that has the abstract method: boolean test(T t)
+ *
+ * Stream interface has following method:
+ *     Stream<T> filter(Predicate<? super T> predicate)
+ *
+ * @author ankitasaklani
+ */
 public class PredicateExample {
     public static void main(String[] args) {
         List<Integer> list = List.of(12, 3, 2, 4, 7, 22, 11, 7, 8, 9, 10);

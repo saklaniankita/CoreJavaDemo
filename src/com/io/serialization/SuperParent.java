@@ -1,6 +1,6 @@
 package com.io.serialization;
 
-import java.io.Serial;
+//import java.io.Serial;
 import java.io.Serializable;
 
 public class SuperParent implements Serializable {

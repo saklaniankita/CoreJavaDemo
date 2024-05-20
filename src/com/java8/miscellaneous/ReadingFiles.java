@@ -8,15 +8,15 @@ import java.util.Arrays;
 public class ReadingFiles {
     public static void main(String[] args) throws IOException {
         //printing contents of file
-        Files.lines(Paths.get("NOTES")).forEach(System.out::println);
+        Files.lines(Paths.get("testFile")).forEach(System.out::println);
 
         //printing all distinct words in a sorted manner
-        Files.lines(Paths.get("Notes")).map(str -> str.split(" "))
+        Files.lines(Paths.get("testFile")).map(str -> str.split(" "))
                 .flatMap(Arrays::stream)
                 .distinct()
                 .sorted()
                 .forEach(System.out::println);
-
+//
         Files.list(Paths.get("./"))
                 .filter(Files::isExecutable)
                 .forEach(System.out::println);

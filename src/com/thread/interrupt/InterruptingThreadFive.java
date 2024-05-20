@@ -33,7 +33,7 @@ public class InterruptingThreadFive extends Thread {
 			System.out.println("Sleep Ended....");
 			System.out.println("Current state; " + Thread.currentThread().getState());
 		} catch (InterruptedException e) {
-			System.out.println("InterrupedException Occurred");
+			System.out.println("InterruptedException Occurred");
 		}
 	}
 

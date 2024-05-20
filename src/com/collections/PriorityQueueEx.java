@@ -16,8 +16,8 @@ public class PriorityQueueEx {
 		queue.add("c");
 		queue.add("y");
 		queue.add("k");
-		System.out.println("head:" + queue.element());
-		System.out.println("head:" + queue.peek());
+		System.out.println("head:" + queue.element()); //throws NoSuchElementException is queue is empty
+		System.out.println("head:" + queue.peek()); //returns null if queue is empty
 		System.out.println("iterating the queue elements:");
 		Iterator<String> itr = queue.iterator(); // This does not assure to print the right sequence
 		while (itr.hasNext()) {
@@ -25,7 +25,7 @@ public class PriorityQueueEx {
 			//System.out.println(queue.poll());
 		}
 
-		queue.remove(); //throws exception if queue is empty
+		queue.remove(); //throws NoSuchElementException if queue is empty
 		queue.poll(); //returns null if queue is empty
 		System.out.println("after removing two elements:");
 		Iterator<String> itr2 = queue.iterator();

@@ -1,6 +1,9 @@
--> Concurrency = Multitasking = Switching between threads. It can be acheived even within a single processor.
--> Switching between multiple threads within a process(Multitreading) is FASTER than switching between multiple
-   processes(Multiprocessing/MicroServices)
+-> A Program is a set of instructions for a computer to perform
+-> The program under execution is called a Process
+-> Thread is the segment of a process which means a process can have multiple threads and these multiple threads
+   are contained within a process
+-> Switching between multiple threads within a SINGLE process(Multithreading/Concurrency/Multitasking) is FASTER than
+   switching between multiple processes(Multiprocessing/MicroServices)
 -> each thread within the same process has its own Stack and Instruction pointer.
    Rest of the things like process files, process metadata, code, the heap etc are shared by all
    the threads within the process
@@ -11,15 +14,32 @@
    because in multithreaded environment resources are shared and thus not secured
 -> Context Switch between threads of same or different processes :
 		stop thread1, schedule out thread1, schedule thread2 in, start thread2 and so on..
--> This scheduling of threads is acheived by Operating System
+-> This scheduling of threads is achieved by Operating System
 -> Context switching between threads of same process is faster and cheaper than Context switching
    between different processes. There is too much information in a process that would have to be saved
    and reloaded each time the CPU decides to switch processes.
 
--> Thread.sleep(1000) : It tells the operating system not to schedule any thread unitl 1000ms passes.
-   During this time this thread makes no CPU Usage
+-> Thread.sleep(1000): It always pauses the current thread execution.
+   Current thread goes into TIMED_WAITING state for the specified number of milliseconds.
+   Thread.sleep() doesn’t lose any monitors or lock the current thread has acquired.
+   Any other thread can interrupt the current thread in sleep, and in such cases InterruptedException is thrown.
 
--> Extends Threda OR Implement Runnable : Implementing Runnable interface is always better because that way the code
+-> Compare the wait () and sleep () methods in Java :
+
+    wait() pauses the thread until the specified number of milliseconds have elapsed or until it receives the
+    desired notification from another thread by notify()/notifyAll() – these happen without keeping a hold on
+    the monitor/lock of the shared object. Current thread goes to WAITING state
+
+    sleep() blocks operations that keep a hold on the monitor/lock of the shared object for the specified
+    number of milliseconds. Current thread goes to TIMED_WAITING state.
+
+    Overall, wait() is used in multithreaded applications with notify() or notifyALL() to synchronize and
+    avoid race conditions. On the other hand, sleep () is using for polling or to check determined results.
+
+-> We can use join() method to make sure that threads execute in a particular order.
+   Before we start second thread , we call join on first thread so that second starts only after first is terminated
+
+-> Extends Thread OR Implement Runnable : Implementing Runnable interface is always better because that way the code
    segregated. And if you extend Thread class then you can not extend any other class because Java does NOT
    support Multiple Inheritance
 

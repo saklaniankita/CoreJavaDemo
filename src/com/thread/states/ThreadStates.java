@@ -2,9 +2,11 @@ package com.thread.states;
 
 /**
  * NEW thread created but not started 
- * RUNNABLE thread executing in JVM (Running
- * is not a state) 
- *  TERMINATED thread has exited or finished
+ * RUNNABLE thread executing in JVM (Running is not a state)
+ * TIMED_WAITING when you call Thread.sleep(timeout) or t.wait(timeout) or join(timeout) for the specified time;
+ * WAITING: When you call wait() or join().
+ *          Thread releases the lock and stays in this state till some other thread calls notify() or notifyAll()
+ * TERMINATED thread has exited or finished
  * 
  * @author Ankita
  * 

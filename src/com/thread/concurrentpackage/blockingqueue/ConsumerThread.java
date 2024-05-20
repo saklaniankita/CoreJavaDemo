@@ -1,6 +1,5 @@
-package com.collections.blockingqueue;
+package com.thread.concurrentpackage.blockingqueue;
 
-import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
 
 public class ConsumerThread implements Runnable {

@@ -12,7 +12,7 @@ public class EmpNameComparator implements Comparator<Employee> {
 
 	@Override
 	public int compare(Employee e1, Employee e2) {
-		// compareTo is implemented in String class that implements Compaarable
+		// compareTo is implemented in String class that implements Comparable
 		// interface and compares strings lexicographicallyF
 		if (e1.getId() > e2.getId()) {
 			// System.out.println(e1.getId() +"is bigger than "+e2.getId());

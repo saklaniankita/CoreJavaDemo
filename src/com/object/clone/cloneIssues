@@ -1,0 +1,11 @@
+Process of deep cloning in Java, conflicts with proper use of final fields, because if your Mutable object is a final field,
+you can not reassign copied values inside clone method.
+
+Five ways to copy object : (new, Class.newInstance(), Constructor.newInstance(), clone(), and deserialization)
+
+Though serialization provides deep cloning but serialization is not solving any problems because
+we will still not be able to modify the final fields,
+we still don't have any control on object construction, and we still need to implement Serializable,
+which is similar to Cloneable. Plus, the serialization process is slower than Object.clone().
+
+Copy Constructor looks best of all solutions.

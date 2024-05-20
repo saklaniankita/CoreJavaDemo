@@ -42,9 +42,7 @@ public class ThreadPriority {
 		thread3.setPriority(Thread.NORM_PRIORITY);
 		
 		thread1.start();
-		Thread.sleep(1000);
 		thread2.start();
-		Thread.sleep(1000);
 		thread3.start();
 	}
 }

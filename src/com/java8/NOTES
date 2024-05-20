@@ -49,7 +49,7 @@
                 list.stream().filter(predicate).forEach(System.out::println);
 
      Similarly, there are several other functional interfaces. we can provide implementations to their unimplemented
-     methods. And then pass them to intermediate stream methods. see
+     methods. And then pass them to intermediate stream methods. see FunctionalInterfaces.png
 
 
 => Stream operations are divided into intermediate and terminal operations, and are combined to form stream pipelines. 

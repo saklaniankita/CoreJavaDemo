@@ -9,7 +9,7 @@ public class PriorityQueueEx2 {
 		pq.add(new Employee(9, "A"));
 		pq.add(new Employee(4, "D"));
 		pq.add(new Employee(1, "S"));
-		// pq.add(null); //Queue does not allow null elements
+		//pq.add(null); //Queue does not allow null elements
 		pq.add(new Employee(6, "J"));
 		System.out.println("head:" + pq.element()); //throws exception if queue is empty
 		System.out.println("head:" + pq.peek()); //returns null if queue is empty

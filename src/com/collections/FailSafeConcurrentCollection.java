@@ -24,7 +24,7 @@ public class FailSafeConcurrentCollection {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+//
 		
 		/**
 		 * Point to note : Though we are adding an item in the list in every iteration, but still the iterator
@@ -43,12 +43,13 @@ public class FailSafeConcurrentCollection {
 			Iterator<String> itr2 = list2.iterator();
 			while (itr2.hasNext()) {
 				itr2.next();
-				//itr2.remove(); // No exception thrown
-				
+				itr2.remove(); // No exception thrown
+
 				list2.add("five"); // No Exception thrown
-				//System.out.println("List after iterator's remove method: " + list2);
+				System.out.println("List after iterator's remove method: " + list2);
 			}
 		} catch (Exception e) {
+			System.out.println("hey there");
 			e.printStackTrace();
 		}
 		System.out.println("SSize of list: "+list2.size());

@@ -51,10 +51,10 @@ public class CloneTwo implements Cloneable {
 
 	}
 
-	// Overriding clone() method
-	// Since we are not doing anything except calling Object's clone method,
-	// program will run correctly even if we don't override clone method in this
-	// class. It will automatically take the Object's class implementation
+//	// Overriding clone() method
+//	// Since we are not doing anything except calling Object's clone method,
+//	// program will run correctly even if we don't override clone method in this
+//	// class. It will automatically take the Object's class implementation
 	@Override
 	public CloneTwo clone() throws CloneNotSupportedException {
 		// calling Object class clone method

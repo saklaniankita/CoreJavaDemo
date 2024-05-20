@@ -7,9 +7,9 @@ package com.object.clone;
  * 
  * Copy constructors are better than Object.clone() because they:
  * 
- * Don’t force us to implement any interface or throw any exception, but we can
- * surely do it if it is required. Don’t require any casts. Don’t require us to
- * depend on an unknown object creation mechanism. Don’t require parent classes
+ * Donï¿½t force us to implement any interface or throw any exception, but we can
+ * surely do it if it is required. Donï¿½t require any casts. Donï¿½t require us to
+ * depend on an unknown object creation mechanism. Donï¿½t require parent classes
  * to follow any contract or implement anything. Allow us to MODIFY FINAL
  * FIELDS. Allow us to have complete control over object creation, meaning we
  * can write our initialization logic in it.
@@ -63,6 +63,7 @@ public class CopyConstructor {
 	public int getData3() {
 		return data3;
 	}
+
 
 	public String toString() {
 		return this.data1 + ", " + this.data2 + ", " + this.data3;

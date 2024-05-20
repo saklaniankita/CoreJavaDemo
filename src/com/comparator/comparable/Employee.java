@@ -1,6 +1,6 @@
 package com.comparator.comparable;
 
-public class Employee implements Comparable<Employee> {
+public class Employee  {
 	private int id;
 	private String name;
 	private int num;
@@ -27,7 +27,7 @@ public class Employee implements Comparable<Employee> {
 		this.name = name;
 	}
 
-	@Override
+	//@Override
 	public int compareTo(Employee tmp) {
 		if (this.num > tmp.num)
 			return 1;

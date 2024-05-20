@@ -37,6 +37,8 @@ public class TestGenerics {
         test4(objList);
         test4(stringList);
         test4(intList);
+
+        test5(objList);
     }
 
     static void test1(Object obj){   //This method accepts Object and its subclasses
@@ -57,7 +59,7 @@ public class TestGenerics {
     }
 
     static void test5(List<? super Integer> list){   //This  method accepts List of Object an dits subclasses.
-        System.out.println("I accept Object and anything that extends Object class");
+        System.out.println("I accept Integer and its super classes");
         list.add(5);    //it is OK to add to a list with generic <? super E>
     }
 }

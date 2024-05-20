@@ -15,7 +15,7 @@ package com.java8.interfaceDefaultMethod;
  */
 public class OldInterfaceImpl implements OldInterface {
 
-	@Override
+   @Override
 	public void existingMethod() {
 		System.out.println("Implemntation of inerface method");
 	}
@@ -32,7 +32,7 @@ public class OldInterfaceImpl implements OldInterface {
 
 	public static void main(String[] args) {
 		OldInterfaceImpl obj = new OldInterfaceImpl();
-		obj.existingMethod(); // Coventional method
+		obj.existingMethod(); // Conventional method
 		obj.newJava8Method1(3); // New Java8 feature that allows interface to have implemented methods
 		obj.newJava8Method(4); // New Java8 feature that allows to override interface implemented methods
 		OldInterface.staticMethod();
