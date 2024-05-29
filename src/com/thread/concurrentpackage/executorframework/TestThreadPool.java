@@ -13,9 +13,9 @@ public class TestThreadPool {
 		//ExecutorService threadPool = Executors.newFixedThreadPool(5);// creating a
 		// pool of 5
 		// threads
-		ExecutorService threadPool = Executors.newSingleThreadExecutor();
+		//ExecutorService threadPool = Executors.newSingleThreadExecutor();
 		//ExecutorService threadPool = Executors.newCachedThreadPool();
-		//ExecutorService threadPool = Executors.newScheduledThreadPool(5);
+		ExecutorService threadPool = Executors.newScheduledThreadPool(5);
 		for (int i = 0; i < 10; i++) {
 			Runnable task = new WorkerThread("" + i);
 			threadPool.execute(task);// calling execute method of

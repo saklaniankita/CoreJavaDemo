@@ -1,7 +1,7 @@
 SYNCHRONIZED METHOD Vs SYNCHRONIZED BLOCK :
 			public class Program {
 					  private static Object locker1 = new Object();
-					  private static Object locker1 = new Object();
+					  private static Object locker2 = new Object();
 					  public void doSomething1() {
 						    ...
 						    synchronized(locker1) {   //First Synchronized Block
@@ -19,7 +19,7 @@ SYNCHRONIZED METHOD Vs SYNCHRONIZED BLOCK :
 			}
 			
 ->	Multiple threads can not enter a synchronized block. ONly thread that has acquired lock "locker1" will enter
-	First Synchronized Block and some other thread that has acquired the lock locker2 will enter Secong Synchronized 
+	First Synchronized Block and some other thread that has acquired the lock locker2 will enter Second Synchronized
 	Block
 ->  Those two threads can access the synchronized block at the sametime
 ->  Unlike synchronized block, Synchronized methods synchronizes on the object instance or the Class.

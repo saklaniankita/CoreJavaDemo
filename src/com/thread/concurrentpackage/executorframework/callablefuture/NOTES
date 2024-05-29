@@ -1,8 +1,0 @@
-=> java.util.concurrent.Future is an interface that represents the result of an asynchronous computation.
-   It allows you to cancel a task, check if it has completed, and retrieve the result of the computation.
-
-=> java.util.concurrent.Callable is an interface that represents a task that can be executed concurrently
-   and returns a result. It is similar to the java.lang.Runnable interface, but it can return a value and
-   throw a checked exception.
-
-=> You can use Future and Callable together to perform concurrent tasks and retrieve the results in a thread-safe manner.

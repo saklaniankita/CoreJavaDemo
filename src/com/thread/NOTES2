@@ -63,7 +63,7 @@ DATA RACE : CPU and Compiler may execute the lines of code out of order to optim
  2. Declaration of shared variables with VOLATILE keyword : 
        -> Solves Race Condition while read/write to/from long & double variable
        -> Solves all Data Race Conditions by guaranteeing order of execution.
-    It makes sure that code that come before the volatile shared variable(VSV) will be exeuted 
+    It makes sure that code that come before the volatile shared variable(VSV) will be executed
     before and that comes after the VSV will be executed after the VSV
     SO, in the above code , if we declare the variables x and y as Volatile
     			public volatile int x = 0;
