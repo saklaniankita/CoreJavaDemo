@@ -34,6 +34,7 @@ public class BasicEquals {
 		BasicEquals a3 = new BasicEquals("Shaym", 1);
 
 		System.out.println(a1.equals(a2));
+		System.out.println(a1==a2);
 		System.out.println(a1.equals(a3));
 	}
 }

@@ -6,16 +6,53 @@
   <component name="ChangeListManager">
     <list default="true" id="457fa9ce-3980-41dd-b459-081e5b9b13e4" name="Default Changelist" comment="Miscellaneous changes">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/ThreadPoolExecutor/CustomThreadPoolExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/ThreadPoolExecutor/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/callablefuture/CallableTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/NOTES2" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thread/NOTES2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/NOTES3" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thread/NOTES3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/NOTES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/TestThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/TestThreadPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/ThreadPool.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/callablefuture/CallableFutureMainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/callablefuture/CallableFutureMainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/callablefuture/NOTES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/collections/Collectionss" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/collections/Collectionss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/NOTES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/OptionalExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/comparator/ComparatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/comparator/CustomSortUsingComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/comparator/Developer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/functionalProgramming/BinaryOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/functionalProgramming/ConsumerExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/functionalProgramming/FunctionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/functionalProgramming/FunctionalInterfaces.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/functionalProgramming/Java8FunctionalInterfaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/functionalProgramming/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/functionalProgramming/PredicateExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/functionalProgramming/SupplierExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/interfaceDefaultMethod/OldInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/interfaceDefaultMethod/OldInterfaceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/interfaceDefaultMethod/defaulTmETHOD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/lambdafunction/ForEachClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/lambdafunction/LambdaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/lambdafunction/MyClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/lambdafunction/MyInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/lambdafunction/MyNewClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/lambdafunction/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/miscellaneous/Parallelization.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/miscellaneous/ReadingFiles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/miscellaneous/UsingThreads.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/StreamExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/intermediateOperation/DistinctSorted.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/intermediateOperation/FilterExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/intermediateOperation/FlatMapExampe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/intermediateOperation/LazyIntermediateOperations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/intermediateOperation/MapExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/intermediateOperation/UtilityMethodsClass1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/terminalOperation/CollectExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/terminalOperation/ForEachExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/terminalOperation/Match.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/terminalOperation/ReduceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/terminalOperation/UtilityMethodsClass2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/terminalOperation/UtilityMethodsClass3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java8/stream/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/object/clone/CloneTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/object/clone/CloneTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/object/equals/BasicEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/object/equals/BasicEquals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/object/equals/NeedOfHashCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/object/equals/NeedOfHashCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/object/testOpeartor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/object/testOpeartor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +62,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,21 +70,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;saklaniankita&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "saklaniankita"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/saklaniankita/CoreJavaDemo.git&quot;,
-    &quot;accountId&quot;: &quot;fde26527-87b6-47c0-8f03-c38362e8b9f0&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/saklaniankita/CoreJavaDemo.git",
+    "accountId": "a0b1c650-1310-456b-9c3e-15f4452d14fe"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2cbIH6hBxRQL1noJ0AvTYd44LaH" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -56,32 +94,30 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CallableFutureMainClass.executor": "Run",
-    "Application.InterruptingThreadEight.executor": "Run",
-    "Application.InterruptingThreadOne.executor": "Run",
-    "Application.JoinThreadOne.executor": "Run",
+    "Application.CollectExample.executor": "Run",
+    "Application.ConsumerExample.executor": "Run",
+    "Application.CustomSortUsingComparator.executor": "Run",
+    "Application.FlatMapExampe.executor": "Run",
+    "Application.FunctionExample.executor": "Run",
+    "Application.LambdaTest.executor": "Run",
+    "Application.LazyIntermediateOperations.executor": "Run",
     "Application.Main.executor": "Run",
-    "Application.NameThreadOne.executor": "Run",
-    "Application.TestThreadPool.executor": "Run",
-    "Application.ThreadExceptionOne.executor": "Run",
-    "Application.ThreadExceptionTwo.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Match.executor": "Run",
+    "Application.Parallelization.executor": "Run",
+    "Application.ReadingFiles.executor": "Run",
+    "Application.StreamExample.executor": "Run",
+    "Application.UtilityMethodsClass1.executor": "Run",
+    "Application.com.java8.functionalProgramming.Main.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ankitasaklani/IntelliJWorkspace/CoreJavaDemo/src/com/thread/concurrentpackage",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.java8.stream.intermediateOperation" />
       <recent name="com.abstractclass" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -90,14 +126,17 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/thread" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.thread.concurrentpackage" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="CallableFutureMainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thread.concurrentpackage.executorframework.callablefuture.CallableFutureMainClass" />
+  <component name="RunManager" selected="Application.StreamExample">
+    <configuration name="CollectExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java8.stream.terminalOperation.CollectExample" />
       <module name="CoreJavaDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thread.concurrentpackage.executorframework.callablefuture.*" />
+          <option name="PATTERN" value="com.java8.stream.terminalOperation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JoinThreadOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thread.join.JoinThreadOne" />
+    <configuration name="LazyIntermediateOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java8.stream.intermediateOperation.LazyIntermediateOperations" />
       <module name="CoreJavaDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thread.join.*" />
+          <option name="PATTERN" value="com.java8.stream.intermediateOperation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thread.concurrentpackage.executorframework.ThreadPoolExecutor.Main" />
+    <configuration name="Match" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java8.stream.terminalOperation.Match" />
       <module name="CoreJavaDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thread.concurrentpackage.executorframework.ThreadPoolExecutor.*" />
+          <option name="PATTERN" value="com.java8.stream.terminalOperation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +170,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NameThreadOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thread.miscellaneous.NameThreadOne" />
+    <configuration name="StreamExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java8.stream.StreamExample" />
       <module name="CoreJavaDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thread.miscellaneous.*" />
+          <option name="PATTERN" value="com.java8.stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +183,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thread.concurrentpackage.executorframework.TestThreadPool" />
+    <configuration name="UtilityMethodsClass1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java8.stream.intermediateOperation.UtilityMethodsClass1" />
       <module name="CoreJavaDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thread.concurrentpackage.executorframework.*" />
+          <option name="PATTERN" value="com.java8.stream.intermediateOperation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,21 +198,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CallableFutureMainClass" />
-        <item itemvalue="Application.TestThreadPool" />
-        <item itemvalue="Application.NameThreadOne" />
-        <item itemvalue="Application.JoinThreadOne" />
+        <item itemvalue="Application.StreamExample" />
+        <item itemvalue="Application.Match" />
+        <item itemvalue="Application.CollectExample" />
+        <item itemvalue="Application.UtilityMethodsClass1" />
+        <item itemvalue="Application.LazyIntermediateOperations" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -185,7 +216,7 @@
       <updated>1708373770932</updated>
       <workItem from="1716220615373" duration="31000" />
       <workItem from="1716220651560" duration="9919000" />
-      <workItem from="1716480707180" duration="8203000" />
+      <workItem from="1716480707180" duration="8902000" />
     </task>
     <task id="LOCAL-00001" summary="Miscellaneous changes">
       <option name="closed" value="true" />
@@ -195,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716228404509</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Miscellaneous changes">
+      <option name="closed" value="true" />
+      <created>1717006747208</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717006747208</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,5 +254,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Miscellaneous changes" />
     <option name="LAST_COMMIT_MESSAGE" value="Miscellaneous changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/thread/concurrentpackage/executorframework/ThreadPoolExecutor/Main.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

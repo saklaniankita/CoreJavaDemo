@@ -24,7 +24,7 @@ package com.object.clone;
  * @author Ankita
  * 
  */
-public class CloneTwo implements Cloneable {
+public class CloneTwo implements Cloneable{
 	int num;
 
 	public int getNum() {
@@ -65,7 +65,7 @@ public class CloneTwo implements Cloneable {
 		CloneTwo c1 = new CloneTwo(20);
 		CloneTwo c2 = null;
 		try {
-			c2 = c1.clone();
+			c2 = (CloneTwo) c1.clone();
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}

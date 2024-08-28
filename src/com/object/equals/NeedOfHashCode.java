@@ -43,6 +43,10 @@ public class NeedOfHashCode {
 	}
 
 
+	@Override
+	public String toString() {
+		return color;
+	}
 
 	/**
 	 * See the difference in output with and without hashcode method
@@ -51,6 +55,7 @@ public class NeedOfHashCode {
 	public int hashCode() {
 		return (31 + this.color.hashCode());
 	}
+
 
 	public static void main(String[] args) {
 		NeedOfHashCode a1 = new NeedOfHashCode("red");

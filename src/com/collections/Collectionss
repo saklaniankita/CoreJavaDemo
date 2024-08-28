@@ -93,7 +93,7 @@ It has only 5 methods like push, pull, peek, empty, search
 
  ==>LINKED HASHSET (maintains insertion order)
    ->A LinkedHashSet is an ordered version of HashSet i.e insertion order is maintained that maintains a "doubly-linked List" across all elements.
-   ->Use this class instead of HashSet when you care about the insertion order order.
+   ->Use this class instead of HashSet when you care about the insertion order.
    ->When you iterate through a HashSet the order is unpredictable, while a LinkedHashSet lets you iterate
      through the elements in the order in which they were inserted.
 
@@ -157,7 +157,7 @@ It has only 5 methods like push, pull, peek, empty, search
          Unbound BlockingQueue : BlockingQueue blockingQueue = new LinkedBlockingDeque(); can grow indefinitely
          Bound BlockingQueue : BlockingQueue blockingQueue = new LinkedBlockingDeque(5); maximum capacity defined
     => we create a blocking queue which is shared by a 1) producer thread(that generates data and put it into the queue)
-       and 2) consumer thread(which removes data from the queue) see package com.collections.blockingqueue
+       and 2) consumer thread(which removes data from the queue) see package com.thread.concurrentpackage.blockingqueue
 
 
 ===> MAP
